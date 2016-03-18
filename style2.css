@@ -7,7 +7,25 @@ body {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.row .footer {
+  padding-top: 0%;
+}
+
+.row .footer p {
+  text-align:center;
+  font-size: 1rem;
+  color: white;
+}
+
+.row .footer a {
+  color: white;
+}
+
+.row .footer a:hover {
+  color: black;
 }
 
 .form {
