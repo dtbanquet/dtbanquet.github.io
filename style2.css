@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(black, red, #8B0000);
+    background: linear-gradient(black, red, #8B0000);
     margin:0;
 }
 
@@ -18,6 +18,11 @@ body {
     padding: 3%;
     font-family: 'Cardo', 'serif';
     color: rgba(255,255,255,0.75);
+}
+
+img {
+  width:100%;
+  height:100%;
 }
 
 .form ul {
@@ -128,11 +133,13 @@ p {
   font-style: italic;
 }
 
+/*
 .cardback {
   content: url('cardfront1.png');
   width: 100%;
   height: 100%;
 }
+*/
 
 .required-message {
   display: none;
