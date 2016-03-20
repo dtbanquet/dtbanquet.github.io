@@ -33,9 +33,17 @@ body {
     margin: 0;
     padding: 0;
     text-align: left;
-    padding: 3%;
+    padding: 1%;
     font-family: 'Cardo', 'serif';
     color: rgba(255,255,255,0.75);
+}
+
+.form-title p {
+  text-decoration: italic;
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  margin-top: -20px;
+  font-size: 1.1rem;
 }
 
 img {

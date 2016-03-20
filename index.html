@@ -1,6 +1,8 @@
 <html !DOCTYPE>
 <head>
 
+	<title>Banquet 2016 | DramaTech Theatre</title>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
@@ -14,10 +16,20 @@
 </head>
 <body>
 
+	<script type="text/javascript">
+		$('.flip').hover(function(){
+			$(this).find(".card").toggleClass("flipped");
+			return false;
+		});
+		$(window).on('beforeunload', function(){
+			$(window).scrollTop(0);
+		});
+	</script>
+
 	<div class="row">
 
 		<div class="game-title wow fadeIn">
-			<a href="index.html"><h1>Let's play a game</h1></a>
+			<h1>Let's play a game</h1>
 		</div>
 
 		<div class="wow fadeInUp">
@@ -74,8 +86,9 @@
 
 	<div class="row">
 
-		<div class="form wow fadeIn">
+		<div class="form wow fadeIn form-title">
 			<h1>Banquet 2016</h1>
+			<p>Tickets are $10 each and must be paid at the door in cash</p>
 		<div class='container'>
 			<script type="text/javascript">var submitted=false;</script>
 			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
@@ -180,16 +193,6 @@
 	<div class="row footer">
 		<p>Issues with the site? <a href="mailto:info@dtbanquet.com">Contact the webmaster at info@dtbanquet.com</a> | Copyright 2016</p>
 	</div>
-
-	<script type="text/javascript">
-		$('.flip').hover(function(){
-			$(this).find(".card").toggleClass("flipped");
-			return false;
-		});
-		$(window).on('beforeunload', function(){
-			$(window).scrollTop(0);
-		});
-	</script>
 
 
 </body>
