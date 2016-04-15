@@ -17,6 +17,11 @@ input[type='submit'] {
 
 .dt-subcaption a {
     font-size: 1.5rem;
+    color: yellow;
+}
+
+.dt-subcaption a:hover {
+    color:green;
 }
 
 input#ss-submit.btn.jfk-button-action {
