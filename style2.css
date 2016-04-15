@@ -15,9 +15,23 @@ input[type='submit'] {
     width: 350px;
 }
 
+.dt-description {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dt-description h1 {
+    color: red;
+}
+
 .dt-subcaption a {
     font-size: 1.5rem;
-    color: yellow;
+    color: red;
+}
+
+.dt-riddle p {
+    color: black;
 }
 
 .dt-subcaption a:hover {
@@ -80,9 +94,8 @@ input[type='text'] {
   padding-top: 0%;
 }
 
-.row .footer p {
+.row, .footer p {
   text-align:center;
-  font-size: 0.5rem;
   color: white;
 }
 
