@@ -1,6 +1,63 @@
 body {
-    background: linear-gradient(black, red, #8B0000);
+    background: black;
     margin:0;
+}
+
+.grad-background {
+  background: linear-gradient(black, maroon, black);
+    margin:0;
+}
+
+input[type='submit'] {
+    font-size: 1.5rem;
+    font-family: 'Cardo', 'serif';
+    background-color: red;
+    width: 350px;
+}
+
+.dt-subcaption a {
+    font-size: 1.5rem;
+}
+
+input#ss-submit.btn.jfk-button-action {
+    width: 182px;
+}
+
+input[type='text'] {
+    font-size: 1.25rem;
+    font-family: 'Cardo', 'serif';
+    width: 50%;
+}
+
+.dt-center {
+    margin-left: 33%;
+    margin-top: auto;
+}
+
+.logo-old { 
+    top         : 0px;
+    left        : 0px;
+    overflow    : hidden;
+    width       : 100%;
+    height      : 100%;
+}
+
+.logo-old p {
+    font-weight : none;
+    font-size   : 5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: -10%;
+    left: 3%;
+}
+
+.logo-old img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
 .row {
@@ -10,13 +67,17 @@ body {
   padding-top: 2%;
 }
 
+.row p {
+    color: white;
+}
+
 .row .footer {
   padding-top: 0%;
 }
 
 .row .footer p {
   text-align:center;
-  font-size: 1rem;
+  font-size: 0.5rem;
   color: white;
 }
 
