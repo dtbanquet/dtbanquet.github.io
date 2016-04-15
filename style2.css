@@ -15,6 +15,10 @@ input[type='submit'] {
     width: 350px;
 }
 
+.dt-nav-table {
+    margin: 0 auto;
+}
+
 .dt-description {
     width: 90%;
     text-align: center;
@@ -97,9 +101,10 @@ input[type='text'] {
 .row, .footer p {
   text-align:center;
   color: white;
+    font-size: 1rem;
 }
 
-.row .footer a {
+.row .footer {
   color: white;
 }
 
