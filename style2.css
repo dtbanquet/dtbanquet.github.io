@@ -1,6 +1,37 @@
 body {
-    background: linear-gradient(black, red, #8B0000);
+    background: black;
     margin:0;
+}
+
+.grad-background {
+  background: linear-gradient(black, maroon, black);
+    margin:0;
+}
+
+.logo-old { 
+    top         : 0px;
+    left        : 0px;
+    overflow    : hidden;
+    width       : 100%;
+    height      : 100%;
+}
+
+.logo-old p {
+    font-weight : none;
+    font-size   : 5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: -10%;
+    left: 3%;
+}
+
+.logo-old img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
 .row {
