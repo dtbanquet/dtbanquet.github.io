@@ -11,10 +11,15 @@ body {
 .dt-dates {
     color: white;
     text-align: left;
+
 }
 
 .dt-dates > ul {
-    margin-left: 33%;
+    margin-left: 10%;
+}
+
+.dt-dates > ul > li {
+    margin-bottom: 2%;
 }
 
 
@@ -38,20 +43,24 @@ a {
   text-decoration: none;
 }
 
+i {
+    color: red;
+}
+
 h2 {
     text-align: center;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,0,0,    0.9);
     font-family: 'Cardo', serif;
-    font-weight: 800;
+    font-weight: 900;
     text-transform: uppercase;
     padding-top: 2%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 p {
   color: red;
   font-family: 'Cardo', 'serif';
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
