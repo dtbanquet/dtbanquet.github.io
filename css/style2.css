@@ -8,6 +8,31 @@ body {
     margin:0;
 }
 
+.youtried {
+    width: 200px;
+    height: 170px;
+}
+
+.dt-btn-align {
+    text-align: center;
+}
+
+input[type='button'] {
+    font-size: 1.5rem;
+    font-family: 'Cardo', 'serif';
+    background-color: red;
+    border-color: black;
+    width: 350px;
+    margin: 2%;
+    color: white;
+}
+
+input[type='button']:hover {
+    border-color: white;
+    color: red;
+    background-color: black;
+}
+
 input[type='submit'] {
     font-size: 1.5rem;
     font-family: 'Cardo', 'serif';
@@ -398,30 +423,6 @@ p {
 }
 
 .thanks {
-  padding-top:5%;
-  text-align: center;
+    padding-top: 5%;
+    text-align: center;
 }
-
-/*
-.bluebox {
-  background-color: blue;
-  display: inline-block;
-  vertical-align: middle;
-  width: 200px;
-}
-
-.greenbox {
-  background-color: green;
-  display: inline-block;
-  vertical-align: middle;
-  width: 400px;
-}
-
-.form-container {
-  text-align: center;
-}
-
-.blackbox {
-  text-align: center;
-}
-*/  
