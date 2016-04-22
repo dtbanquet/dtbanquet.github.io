@@ -102,4 +102,16 @@ input[type='button']:hover {
 input[type='radio'] {
     width:20px;
     height:20px;
+
+}
+
+.ss-choice-item > label:hover {
+    background-color: rgba(255,255,255,0.25);
+    padding: 5px 5px;
+    padding-left: 0;
+}
+
+.ss-choice-item > label {
+    /*background-color: rgba(255,0,0,0.25);
+    padding: 5px 5px;
 }
