@@ -98,3 +98,8 @@ input[type='button']:hover {
     color: red;
     background-color: black;
 }
+
+input[type='radio'] {
+    width:20px;
+    height:20px;
+}
