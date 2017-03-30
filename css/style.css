@@ -1,0 +1,18 @@
+body {
+    background: url('../img/temp_bg.gif')  no-repeat fixed;
+    background-position: left top;
+    background-size: cover;
+}
+
+#comingsoon {
+    width: 43vh;
+    position: absolute;
+    right: 5vh;
+}
+
+#time_png {
+    width: 43vh;
+    position: absolute;
+    left: 5vh;
+    bottom: 0vh;
+}
