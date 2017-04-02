@@ -3,7 +3,7 @@ html, body {
 } 
 
 body {
-    background: url('../dt.gif')  no-repeat fixed;
+    background: url('../img/temp_bg.gif')  no-repeat fixed;
     background-position: left top;
     -webkit-background-size: auto 100%; 
     -moz-background-size: auto 100%;  

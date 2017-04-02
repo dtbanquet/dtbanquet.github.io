@@ -1,13 +1,129 @@
 <!doctype html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body onload="checkCookie()">
+        <div>
+            <!-- vote  -->
+            <div class="room room1">
+                <div class="container"> 
+                    <!--<button class="btn btn-default top right" id="back-btn-1">Back ></button>-->
+                    <h4 class="top right front" id="back-btn-1"> Back >  </h4>
+                    <div class="form" id="vote-form"> 
+                        <h3> The ballot is not open yet ;)</h3>
+                     </div>
+                </div>
+            </div>
+            <!-- home -->
+            <div class="room room2">
+                <div class="container"> 
+                    <!--<button class="btn btn-default left" id="vote-btn" id="vote-btn"> Vote </button>
+                    <button class="btn btn-default right" id="rsvp-btn" id="rsvp-btn"> RSVP </button>-->
+                    <div class="center txt-center">
+                        <h1> DT Banquet 2017 </h1>
+                        <!-- count down timer -->
+                        <div style="position: relative;">
+                            <iframe src="http://free.timeanddate.com/countdown/i5no525z/n25/cf100/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcbfd2f0/fn3/fs200/szw256/szh108/iso2017-04-30T00:00:00" allowTransparency="true" frameborder="0" width="256" height="108"></iframe>
 
-      <img id="comingsoon" src="comingsoon.png" />
-      <img id="time_png" src="time.png" />
+                            <div id="iframeBlocker"></div>
+                        </div>
+                        <div> <h3 id="welcome_msg"> </h3> </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
 
+
+                        <div class="row">
+                            <div class="col-sm-6"><h3 class="hidden left blink" id="vote-btn">Vote </h3></div>
+                            <div class="col-sm-6"><h3 class="right blink" id="rsvp-btn"> RSVP</h3></div>
+                        </div>
+                        
+                        <div class="bottom txt-center"> 
+                            <h3 class="blink"> Swipe or use your left and right keys to navigate </h3> 
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- RSVP -->
+            <div class="room room3">
+                <div class="container"> 
+                     <!--<button class="btn btn-default top left" id="back-btn-2">< Back</button>-->
+                     <h4 class="top left front" id="back-btn-2"> < Back  </h4>
+                     <div class="form" id="rsvp-form">
+                             <h2> RSVP for Banquet! </h2>
+                             <h4> Tickets cost $15 (due in cash on the day of Banquet). Banquet will be at 6PM on April 29th, 2017 </h4>
+                             <div class="ss-form"><script type="text/javascript">var submitted = false;</script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                    onload="if(submitted){cacheRSVP();}"></iframe>
+                                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSckcFeWDplwg3Y3ckt0oDJkT5flAW3oqNAaWWQGf5f8wBUshg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                            <ol role="list" class="ss-question-list" style="padding-left: 0;">
+
+                             <div class="ss-form-question errorbox-good" role="listitem">
+                             <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+                             <label class="ss-q-item-label" for="entry_436026593"><div class="ss-q-title">Name
+                             </div>
+                             <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                             <input type="text" name="entry.436026593" value="" class="ss-q-short" id="entry_436026593" dir="auto" aria-label="Name  " title="">
+                             <div class="error-message" id="1176530996_errorMessage"></div>
+                             </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                             <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+                             <label class="ss-q-item-label" for="entry_2037267624"><div class="ss-q-title">Email
+                             </div>
+                             <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                             <input type="text" name="entry.2037267624" value="" class="ss-q-short" id="entry_2037267624" dir="auto" aria-label="Email  " title="">
+                             <div class="error-message" id="115259844_errorMessage"></div>
+                             </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                             <div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+                             <label class="ss-q-item-label" for="entry_1186450282"><div class="ss-q-title">Will you be bringing a Plus 1?
+                             </div>
+                             <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+
+                             <ul class="ss-choices" role="radiogroup" aria-label="Will you be bringing a Plus 1  "><li class="ss-choice-item">
+                             <label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.309494750" value="Nope, just myself!" id="group_309494750_1" role="radio" class="ss-q-radio" aria-label="Nope, just myself!"></span>
+                             <span class="ss-choice-label">&nbsp;Nope, just myself!</span>
+                             </label></li> <li class="ss-choice-item">
+                             <label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.309494750" value="Yes (for an additional $15)" id="group_309494750_2" role="radio" class="ss-q-radio" aria-label="Yes (for an additional $15)"></span>
+                             <span class="ss-choice-label">&nbsp;Yes (for an additional $15)</span>
+                             </label></li></ul>
+                             <div class="error-message" id="1186450282_errorMessage"></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+                             <div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+                             <label class="ss-q-item-label" for="entry_953766398"><div class="ss-q-title">Dietary Restrictions
+                             </div>
+                             <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+                             <input type="text" name="entry.953766398" value="" class="ss-q-short" id="entry_953766398" dir="auto" aria-label="Dietary Restrictions  " title="">
+                             <div class="error-message" id="154167123_errorMessage"></div>
+                             </div></div></div>
+                             <input type="hidden" name="draftResponse" value="[null,null,&quot;-2636500392503385033&quot;]
+                             ">
+                             <input type="hidden" name="pageHistory" value="0">
+
+
+
+                             <input type="hidden" name="fbzx" value="-2636500392503385033">
+                             <div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
+                             <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                             <input type="submit" name="submit" value="RSVP" id="ss-submit" class="jfk-button jfk-button-action "></td>
+                             </tr></tbody></table></div></ol></form></div>
+                     </div>
+                </div>
+            </div>
+        </div>
   </body>
+  <script src="plugins/js.cookie.js"></script>
+  <script src="js/main.js"></script>
 </html>
