@@ -316,6 +316,8 @@ pre {
  text-orientation: upright;
   transform: translatex(0px);
   animation: matrix linear 40s infinite;
+  background-color: #000 !important;
+  border: #000 !important;
 }
 @keyframes matrix {
   100% {
