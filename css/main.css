@@ -273,3 +273,56 @@ list-style-type: none;
 .ss-q-short {
     color: #000000;
 }
+
+
+article { 
+  display: block;
+  justify-content: space-around;
+  width: 5555px;
+  height: 7vh;
+  position: fixed;
+  top:0; left:0;
+  overflow: hidden;
+  animation: blur 11s infinite;
+  background: #000;
+  box-sizing: border-box;
+}
+@keyframes blur {
+  23% {filter: url(#none);}
+  24% {filter: url(#svg-blur-h);}
+  25% {filter: url(#none);}
+  26% {filter: url(#svg-blur-h);}
+  27% {filter: url(#none);}
+  28% {filter: url(#svg-blur-h);}
+  35% {filter: url(#none);}
+  80% {filter: url(#none);}
+  81% {filter: url(#svg-blur-v);}
+  87% {filter: url(#none);}
+  88% {filter: url(#svg-blur-v);}
+  89% {filter: url(#none);}
+}
+pre {
+  color: #80FF00;
+  text-shadow: 0 0 2px #60F000, 1px -1px 2px #60F000;
+  font-weight: 400;
+  font-size: 2.5vh;
+  text-decoration: none;
+  letter-spacing: .3rem;
+  word-spacing: 1rem;
+  padding: 1rem 0;
+  writing-mode: horizontal-tb;
+  -webkit-text-orientation: upright;
+  -moz-text-orientation: upright;
+ text-orientation: upright;
+  transform: translatex(0px);
+  animation: matrix linear 40s infinite;
+}
+@keyframes matrix {
+  100% {
+    transform: translatex(-3555px);
+  }
+}
+pre:nth-child(5n+1) {
+  animation-delay: 1s;
+  animation-duration: 20s;
+}
