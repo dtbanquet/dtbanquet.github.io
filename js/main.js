@@ -2,7 +2,7 @@
 var rsvp_form = $("#rsvp-google-form");
 console.log(rsvp_form[0]);
 
-canVote = false;
+canVote = true;
 
 
 $( ".room1 > .container" ).hide();
@@ -195,4 +195,5 @@ function cacheRSVP() {
 function cacheVote() {
   Cookies.set('vote', true, { expires: 40, path: '/' });
   $("#vote-form").html("<h3> Thank you for voting :) </h3>");
+  $('#back-btn-1').click();
 }
