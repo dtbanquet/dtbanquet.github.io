@@ -137,7 +137,7 @@ button {
     background-position: left top;
     background-size: 100%;
     background-size: cover;
-    background-image: url('../img/voting.jpg');
+    background-image: url('../img/lemon.jpg');
    /* background-color: black; */
 }
 
@@ -255,7 +255,7 @@ iframe {
 
 .ss-q-checkbox {
     position: absolute;
-    left: 7%;
+    left: 6.85%;
 }
 
 .ss-item {
