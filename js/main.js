@@ -198,6 +198,12 @@ function cacheVote() {
   $('#back-btn-1').click();
 }
 
+function cacheFinal() {
+  Cookies.set('final', true, { expires: 40, path: '/' });
+  $("#vote-form").html("<h3> Thank you for voting :) </h3>");
+  $('#back-btn-1').click();
+}
+
 // const TWO_PI = Math.PI * 2;
 
 // var image,
