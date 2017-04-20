@@ -223,6 +223,17 @@ div.form {
     height: 100vh;
 }
 
+.room1.container {
+    position: absolute;
+    width: 768px;
+    height: 485px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 iframe {
     z-index: -9999999;
     margin-left: 1%;
@@ -250,7 +261,7 @@ iframe {
 
 .ss-q-radio {
     position: absolute;
-    left: 7.3%;
+    left: 6.85%;
 }
 
 .ss-q-checkbox {
