@@ -176,7 +176,7 @@ function checkRSVP(user) {
 }
 
 function checkVote() {
-  var status = Cookies.get('vote');
+  var status = Cookies.get('final');
   if(status) {
     $("#vote-form").html("<h3> Thank you for voting :) </h3>");
   }
@@ -192,11 +192,11 @@ function cacheRSVP() {
   $('#back-btn-2').click();
 }
 
-function cacheVote() {
-  Cookies.set('vote', true, { expires: 40, path: '/' });
-  $("#vote-form").html("<h3> Thank you for voting :) </h3>");
-  $('#back-btn-1').click();
-}
+// function cacheVote() {
+//   Cookies.set('vote', true, { expires: 40, path: '/' });
+//   $("#vote-form").html("<h3> Thank you for voting :) </h3>");
+//   $('#back-btn-1').click();
+// }
 
 function cacheFinal() {
   Cookies.set('final', true, { expires: 40, path: '/' });
