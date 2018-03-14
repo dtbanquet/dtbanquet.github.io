@@ -12,7 +12,7 @@ body {
     overflow: hidden;
 }
 
-@media only screen and (max-width : 1000px) {
+@media handheld and (max-width: 600px), screen and (max-width : 600px) {
     #Poster {
         visibility: hidden;
     }
