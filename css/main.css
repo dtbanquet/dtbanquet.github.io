@@ -3,10 +3,14 @@ html {
 } 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background: url('../img/DQmP957L1jcyQKN1QAu6o7EJYhtH8ZxyK2zyVBgGRGucWRM.jpg')  no-repeat fixed;
+    background-position: left top;
+    -webkit-background-size: 100% 100%; 
+    -moz-background-size: 100% 100%;  
+    -o-background-size: 100% 100%;  
+    background-size: 100% 100%;
     overflow: hidden;
     padding: 0;
-    color: white;
     height:100%;
 }
 
@@ -15,332 +19,39 @@ body {
 }
 
 h1 {
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 40px !important;
-  font-size: 6vh !important;
+  font-family: Jazz LET, Stencil Std, fantasy;
+  font-size: 50px !important;
+  font-size: 8vh !important;
 }
 
-h3 {
+#killMe {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vh !important;
-    font-size: 30px !important;
+    font-size: 25px !important;
+    text-align: left;
+    margin: 5vh;
+    width: 40vw;
 }
 
-h4 {
+
+#killMeMore {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vh !important;
-    font-size: 18px !important;
-}
-
-p {
-    font-size: 24px !important;
-    font-size: 2vh !important;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.blink {
-    animation: blinker 3.0s linear infinite;
-}
-
-h3.right {
+    font-size: 0.7vh !important;
+    font-size: 15px !important;
+    color: white;
+    text-align: center;
+    bottom: 5vh;
     position: absolute;
-    right: 3vw;
 }
 
-h3.left {
-    position: absolute;
-    left: 3vw;
-}
 
-h4.right {
-    position: absolute;
-    right: 3vw;
-}
-
-h4.left {
-    position: absolute;
-    left: 3vw;
-}
-
-h4.front {
-    position: absolute;
-    z-index: 100;
-}
-
-#row {
-
-    top: 15vh;
-
-}
-
-.bottom {
-    position: absolute;
-    bottom: 1vh;
-    width: 100%;
-}
-
-@keyframes blinker {  
-  50% { opacity: 0.1; }
-}
 
 button {
   font-family: Impact, Charcoal, sans-serif;
-  margin: 3vw;
+  margin-left: 20vw;
   position: absolute;
-  top: 40vh;
-}
-
-#vote-btn:hover {
-    cursor: w-resize
-}
-
-#back-btn-1:hover {
-    cursor: e-resize
-}
-
-#back-btn-2:hover {
-  cursor: w-resize;
-}
-
-#rsvp-btn:hover {
-    cursor: e-resize;
-}
-
-/*
-#back-btn-1 {
-  font-size: 24px !important;
-  font-size: 3vh !important;
-}
-
-#back-btn-2 {
-  font-size: 24px !important;
-  font-size: 3vh !important;
-}
-
-#vote-btn {
-    font-size: 40px !important;
-    font-size: 6vh !important;
-}
-
-#rsvp-btn {
-    font-size: 40px !important;
-    font-size: 6vh !important;
-}*/
-
-.room1 {
-    position:absolute;
-    height: 100vh;
-    width: 0vw;
-    left: 0vw;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: left top;
-    background-size: 100%;
-    background-size: cover;
-    background-image: url('../img/lemon.jpg');
-   /* background-color: black; */
-}
-
-.room2 {
-    position:absolute;
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: left top;
-    background-size: 100%;
-    background-size: cover;
-    background-image: url('../img/thingy.gif');
-    background-color: black;
-}
-
-.room3 {
-    position:absolute;
-    height: 100vh;
-    width: 0vw;
-    right: 0vw;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: left top;
-    background-size: 100%;
-    background-size: cover;
-    background-image: url('../img/RSVPRoomEdit.jpg');
-}
-
-.right {
-    right: 0;
-}
-
-.left {
-    left: 0;
-}
-
-.top {
-    top: 1.5vh;
-}
-
-button.right {
-    right: 0vh;
-}
-
-hidden_iframe.top {
-    top: 2vh;
-}
-
-.navi{
-    position: absolute;
-    top: 40vh;
-}
-
-div.center {
-    position: absolute;
-    left: 5vw;
-    width: 90vw;
-    top: 5vh;
-    height: 90vh;
-}
-
-div.form {
-    position: absolute;
-    left: 5vw;
-    width: 90vw;
-    top: 7.5vh;
-    height: 90vh;
-    overflow-y: scroll;
-    background-color: rgba(0,0,0,0.4);
-    padding: 5vw;
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.container {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-.room1.container {
-    position: absolute;
-    width: 768px;
-    height: 485px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-iframe {
-    z-index: -9999999;
-    margin-left: 1%;
-}
-
-#iframeBlocker {
-    position:absolute; 
-    top: 0; 
-    left: 0; 
-    width:95%; 
-    height:95%;
-    background-color:aliceblue;
-    opacity:0.0;
-}
-
-.ss-q-title {
-    font-size: 24px !important;
-    font-size: 2vh !important;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.ss-q-item-label {
-    margin-top: 3vh;
-}
-
-.ss-q-radio {
-    position: absolute;
-    left: 6.85%;
-}
-
-.ss-q-checkbox {
-    position: absolute;
-    left: 6.85%;
-}
-
-.ss-item {
-   margin-top: 3vh; 
-}
-#ss-submit {
-  position: absolute;
-  left: 5vw;
-  background-color: #008CBA;
-  border-radius: 8px;
-  border-color: transparent;
-  padding: 5px;
-}
-
-ul
-{
-list-style-type: none;
-}
-
-.ss-q-short {
-    color: #000000;
+  top: 60vh;
 }
 
 
-article { 
-  display: block;
-  justify-content: space-around;
-  width: 5555px;
-  height: 7vh;
-  position: fixed;
-  top:0; left:0;
-  overflow: hidden;
-  animation: blur 11s infinite;
-  background: #000;
-  box-sizing: border-box;
-}
-@keyframes blur {
-  23% {filter: url(#none);}
-  24% {filter: url(#svg-blur-h);}
-  25% {filter: url(#none);}
-  26% {filter: url(#svg-blur-h);}
-  27% {filter: url(#none);}
-  28% {filter: url(#svg-blur-h);}
-  35% {filter: url(#none);}
-  80% {filter: url(#none);}
-  81% {filter: url(#svg-blur-v);}
-  87% {filter: url(#none);}
-  88% {filter: url(#svg-blur-v);}
-  89% {filter: url(#none);}
-}
-pre {
-  color: #80FF00;
-  text-shadow: 0 0 2px #60F000, 1px -1px 2px #60F000;
-  font-weight: 400;
-  font-size: 2.5vh;
-  text-decoration: none;
-  letter-spacing: .3rem;
-  word-spacing: 1rem;
-  padding: 1rem 0;
-  writing-mode: horizontal-tb;
-  -webkit-text-orientation: upright;
-  -moz-text-orientation: upright;
- text-orientation: upright;
-  transform: translatex(0px);
-  animation: matrix linear 40s infinite;
-  background-color: #000 !important;
-  border: #000 !important;
-}
-@keyframes matrix {
-  100% {
-    transform: translatex(-3555px);
-  }
-}
-pre:nth-child(5n+1) {
-  animation-delay: 1s;
-  animation-duration: 20s;
-}
+

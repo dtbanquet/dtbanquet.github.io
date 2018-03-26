@@ -1,46 +1,23 @@
 <!doctype html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/megStyle.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocks</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-      <img id="Poster" src="img/thisisthething.png" />
-      <p id="Vote">Official Banquet Website Opens In:</p>
-      <p id="Count"></p>
-
-		<script>
-		// Set the date we're counting down to
-		var countDownDate = new Date("Mar 26, 2018 18:00:00").getTime();
-
-		// Update the count down every 1 second
-		var x = setInterval(function() {
-
-		  // Get todays date and time
-		  var now = new Date().getTime();
-
-		  // Find the distance between now an the count down date
-		  var distance = countDownDate - now;
-
-		  // Time calculations for days, hours, minutes and seconds
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		  // Display the result in the element with id="demo"
-		  document.getElementById("Count").innerHTML = days + "d " + hours + "h "
-		  + minutes + "m " + seconds + "s ";
-
-		  // If the count down is finished, write some text 
-		  if (distance < 0) {
-		    clearInterval(x);
-		    document.getElementById("Count").innerHTML = "EXPIRED";
-		  }
-		}, 1000);
-		</script>
-
+       
+                    <div>
+                        <h1> Take a Trip to the Wild Wild West </h1>
+                    </div>
+                    <div id="killMe">
+                    <p>Dramatech Banquet Committee invites you to our western themed banquet taking place on April 28th 2018 at 6pm.</p>
+                    <p>Come in costumes or as fancy as you'd like! Tickets will be 15 dollars and physical invites will be out Wednesday.</p>
+                    <p>Feel free to bring a plus one!</p>
+                    </div>
+                        
+                    <button type="button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc9RexO1ps6iT4_BPmYWxsjO1ZbOILhVfvlCBZpROHnlfnZ2Q/viewform?usp=sf_link'">Click Here To Vote!</button>
+                    <div id="killMeMore">
+                    <p>Westerns and the wild west have a lot to build on so to make everyone happy, please stay away from any cultural appropriation. Also, if you have a fake gun or weapon for your outfit, please make sure it has an orange tip.</p>
+                    </div>                    
   </body>
 </html>
