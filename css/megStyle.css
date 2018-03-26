@@ -12,9 +12,46 @@ body {
     overflow: hidden;
 }
 
-@media handheld and (max-width: 600px), screen and (max-width : 600px) {
+@media handheld and (max-width: 1000px), screen and (max-width : 1000px) {
+    body {
+        background: url('../img/wood.jpg')  no-repeat fixed;
+        background-position: left top;
+        -webkit-background-size: 100% 100%; 
+        -moz-background-size: 100% 100%;  
+        -o-background-size: 100% 100%;  
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
     #Poster {
         visibility: hidden;
+    }
+
+    #Vote {
+        text-align: center;
+        position: fixed;
+        font-size: 7vh;
+        width: 90vw;
+        margin-left: 5vw;
+        color: white;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -2px 2px 0 #000,
+        1px 1px 0 #000;
+    }
+
+    #Count {
+        text-align: center;
+        positon: fixed;
+        font-size: 8vh;
+        width: 90vw;
+        margin-left: 5vw;
+        color: white;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -2px 2px 0 #000,
+        1px 1px 0 #000; 
     }
 
 }
@@ -30,8 +67,8 @@ body {
     text-align: center;
     font-size: 7vh;
     margin-top: 40vh;
-    margin-left: 5vh;
-    width: 58vh;
+    margin-left: 3vw;
+    width: 30vw;
     color: white;
     text-shadow:
     -1px -1px 0 #000,
@@ -44,8 +81,8 @@ body {
     text-align: center;
     font-size: 8vh;
     margin-top: 5vh;
-    margin-left: 5vh;
-    width: 58vh;
+    margin-left: 3vw;
+    width: 30vw;
     color: white;
     text-shadow:
     -1px -1px 0 #000,
