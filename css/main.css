@@ -48,9 +48,24 @@ h1 {
 
 button {
   font-family: Impact, Charcoal, sans-serif;
-  margin-left: 20vw;
   position: absolute;
-  top: 60vh;
+  /*float: left;*/
+  /*display: block;*/
+  top: 70vh;
+}
+
+#PressMe {
+  margin-left: 7vw;
+  width: 7vw;
+}
+
+#PressMe2 {
+  margin-left: 15vw;
+  width: 12vw;
+}
+
+#PressMe3 {
+  margin-left: 28vw;
 }
 
 
