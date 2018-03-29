@@ -49,8 +49,8 @@ h1 {
 button {
   font-family: Impact, Charcoal, sans-serif;
   position: absolute;
-  /*float: left;*/
-  /*display: block;*/
+  float: left;
+  display: block;
   top: 70vh;
 }
 
