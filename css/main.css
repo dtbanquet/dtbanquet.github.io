@@ -19,13 +19,14 @@ body {
 }
 
 h1 {
-  font-family: Jazz LET, Stencil Std, fantasy;
+  padding-left: 20px;
+  font-family: 'Rye', cursive;
   font-size: 50px !important;
   font-size: 8vh !important;
 }
 
 #killMe {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arvo', serif;
     font-size: 2vh !important;
     font-size: 25px !important;
     text-align: left;
@@ -35,11 +36,14 @@ h1 {
 
 
 #killMeMore {
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-left: 620px;
+    padding-right: 20px;
+    font-family: 'Arvo', serif;
     font-size: 0.7vh !important;
     font-size: 15px !important;
     color: white;
-    text-align: center;
+    text-align: left;
     bottom: 5vh;
     position: absolute;
 }
